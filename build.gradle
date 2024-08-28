@@ -7,7 +7,12 @@ repositories {
 }
 
 dependencies {
-	testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+	// Use the latest JUnit Jupiter version
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0' // Latest stable version as of now
+
+    // Include JUnit Platform Commons for compatibility
+    testImplementation 'org.junit.platform:junit-platform-commons:1.10.0' // Match the platform version
+
 }
 
 test {
